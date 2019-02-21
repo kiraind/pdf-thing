@@ -1,0 +1,145 @@
+%PDF-1.7
+%µí®û
+3 0 obj
+<< /Length 4 0 R >>
+stream
+/DeviceRGB cs /DeviceRGB CS
+0.78431374 0.78431374 1 SC
+10 10 280 380 re
+10 300 m 290 300 l 150 10 m 150 390 l S
+BT
+/F0 12 Tf
+10 380 Td
+(Top left) Tj
+ET
+BT
+/F0 12 Tf
+10 10 Td
+(Bottom left) Tj
+ET
+BT
+/F0 12 Tf
+242.648 380 Td
+(Top right) Tj
+ET
+BT
+/F0 12 Tf
+225.308 10 Td
+(Bottom right) Tj
+ET
+BT
+/F1 18 Tf
+114.513 330 Td
+(Centered) Tj
+ET
+BT
+/F2 14 Tf
+18 TL
+10 300 Td
+(Some lines of text in what might look like a) Tj
+(paragraph of three lines. Lorem ipsum dolor) '
+(sit amet. Blahonga. ) '
+[(W) 130 (AN) -40 (D) 0 ] TJ
+0 -30 Td
+[(o) -304 (o) -288 (o) -272 (o) -256 (o) -240 (o) -224 (o) -208 (o) -192 (o) -176 (o) -160 (o) -144 (o) -128 (o) -112 (o) -96 (o) -80 (o) -64 (o) -48 (o) -32 (o) -16 (o) 0 (o) 16 (o) 32 (o) 48 (o) 64 (o) 80 (o) 96 (o) 112 (o) 128 (o) 144 (o) 160 (o) 176 (o) 192 (o) 208 (o) 224 (o) 240 (o) 256 (o) 272 (o) 288 (o) 304 (o) 320 ] TJ
+ET
+BT
+/F3 14 Tf
+36.095993 200 Td
+(På svenska använder vi bokstäverna å, ä & ö) Tj
+ET
+BT
+/F3 14 Tf
+56.662003 182 Td
+(i ord som slånbärslikör. Därför använder) Tj
+ET
+BT
+/F3 14 Tf
+90.108 164 Td
+(rust-pdf /WinAnsiEncoding för text.) Tj
+ET
+BT
+/F4 14 Tf
+88.287994 130 Td
+(Hellas ABGDabgd) Tj
+ET
+BT
+/F4 14 Tf
+100.531 114 Td
+(" m < d : $ s Î S) Tj
+ET
+BT
+/F5 14 Tf
+131.163 90 Td
+(ª«©¨) Tj
+ET
+endstream
+endobj
+4 0 obj
+1237
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Times-Italic /Encoding /WinAnsiEncoding >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Times-Roman /Encoding /WinAnsiEncoding >>
+endobj
+7 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /ZapfDingbats /Encoding /ZapfDingbatsEncoding >>
+endobj
+8 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+9 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Times-Bold /Encoding /WinAnsiEncoding >>
+endobj
+10 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Symbol /Encoding /SymbolEncoding >>
+endobj
+11 0 obj
+<< /Type /Page
+   /Parent 2 0 R
+   /Resources << /Font << /F5 7 0 R /F4 10 0 R /F2 6 0 R /F0 8 0 R /F3 5 0 R /F1 9 0 R >> >>
+   /MediaBox [ 0 0 300 400 ]
+   /Contents 3 0 R
+>>
+endobj
+2 0 obj
+<< /Type /Pages
+   /Count 1
+   /Kids [ 11 0 R ]
+>>
+endobj
+12 0 obj
+<< /Title (Text example)
+ /CreationDate (D:20190220232512+0300)
+ /ModDate (D:20190220232512+0300)>>
+endobj
+1 0 obj
+<< /Type /Catalog
+   /Pages 2 0 R
+>>
+endobj
+xref
+0 13
+0000000000 65535 f 
+0000002291 00000 n 
+0000002109 00000 n 
+0000000015 00000 n 
+0000001304 00000 n 
+0000001324 00000 n 
+0000001424 00000 n 
+0000001523 00000 n 
+0000001628 00000 n 
+0000001725 00000 n 
+0000001823 00000 n 
+0000001917 00000 n 
+0000002175 00000 n 
+trailer
+<< /Size 13
+   /Root 1 0 R
+   /Info 12 0 R
+>>
+startxref
+2343
+%%EOF
