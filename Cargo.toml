@@ -5,5 +5,4 @@ authors = ["Alexei Paksevatkin <ne.eshte@otso.city>"]
 edition = "2018"
 
 [dependencies]
-pdf-canvas = "*"
-lopdf = "*"
+printpdf = "0.2.8"
