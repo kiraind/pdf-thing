@@ -5,7 +5,7 @@ use std::path::Path;
 use std::io;
 
 fn main() {
-    let path = Path::new("test.txt");
+    let path = Path::new("test.pdf");
     let display = path.display();
 
     // Open the path in read-only mode, returns `io::Result<File>`
@@ -76,7 +76,7 @@ fn main() {
     //     print!("{}", byte as char);
     // }
 
-    let mut output_file = File::create("output.txt").unwrap();
+    let mut output_file = File::create("output.pdf").unwrap();
 
     output_file.write_all(&output_buffer).unwrap();
 

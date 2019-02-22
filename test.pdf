@@ -1,0 +1,176 @@
+%PDF-1.5
+%%EOF
+
+6 0 obj
+<<
+    /Type /Catalog
+    /Pages 5 0 R
+>>
+endobj
+
+1 0 obj
+<<
+    /Type /Page
+    /Parent 5 0 R
+    /MediaBox [ 0 0 612 792 ]
+    /Resources 3 0 R
+    /Contents 2 0 R
+>>
+endobj
+
+% Resources declaration
+3 0 obj
+<<
+    /ProcSet[
+        /PDF
+        /Text
+    ]
+    /Font <<
+        /F1 4 0 R
+    >>
+
+>>
+endobj
+
+% Font declaration
+4 0 obj
+<<
+  /Type /Font
+  /BaseFont/BAAAAA+Montserrat-ExtraBold
+  /FirstChar 0
+  /FontDescriptor 10 0 R
+  /LastChar 10
+  /Subtype/TrueType
+  /ToUnicode 9 0 R
+  /Widths [
+    587
+    806
+    642
+    313
+    666
+    283
+    291
+    1184
+    443
+    698
+    301
+  ]
+>>
+endobj
+
+# FontDescriptor
+10 0 obj
+<<
+  /Type /FontDescriptor
+  /Ascent 968
+  /CapHeight 1088
+  /Descent -251
+  /Flags 4
+  /FontBBox [
+    -906
+    -268
+    1714
+    1088
+  ]
+  /FontFile2 11 0 R
+  /FontName /BAAAAA+Montserrat-ExtraBold
+  /ItalicAngle 0
+  /StemV 80
+>>
+endobj
+
+% Unicode map
+9 0 obj
+<<
+    /Length 635
+>>
+stream
+/CIDInit/ProcSet findresource begin
+12 dict begin
+begincmap
+/CIDSystemInfo <<
+    /Registry (Adobe)
+    /Ordering (UCS)
+    /Supplement 0
+>> def
+/CMapName/Adobe-Identity-UCS def
+/CMapType 2 def
+1 begincodespacerange
+    <00> <FF>
+endcodespacerange
+10 beginbfchar
+    <01> <0065> % Unicode 'e'
+    <02> <0048> % Unicode 'H'
+    <03> <006C> % Unicode 'l'
+    <04> <006F> % Unicode 'o'
+    <05> <002C> % Unicode ','
+    <06> <0020> % Unicode ' '
+    <07> <0057> % Unicode 'W'
+    <08> <0072> % Unicode 'r'
+    <09> <0064> % Unicode 'd'
+    <0A> <0021> % Unicode '!'
+endbfchar
+endcmap
+CMapName currentdict /CMap defineresource pop
+end
+end
+endstream
+endobj
+
+2 0 obj
+<<
+    /Length 121
+>>
+stream
+BT
+    /F1 24 Tf
+    56.8 600 Td
+    %1 0 0 1 260 600 Tm
+    %[<01>-500<02>-500<03>-500<03>-500<04>-500<05>-500<06>-500<07>-500<04>-500<08>-500<03>-500<09>-500<0A>]TJ
+    [<02><01><03><03><04><05><06><07><04><08><03><09><0A>]TJ
+ET
+endstream
+endobj
+
+5 0 obj
+<<
+    /Type /Pages
+    /Kids [ 1 0 R ]
+    /Count 1
+>>
+endobj
+
+8 0 obj
+<</Creator<FEFF005700720069007400650072>
+/Producer<FEFF004C0069006200720065004F0066006600690063006500200036002E0031>
+/CreationDate(D:20190219102232+03'00')>>
+endobj
+
+11 0 obj
+<<
+  /Length1 7508
+>>
+stream
+%{montserrat-font.bin}
+endstream
+endobj
+
+% xref
+% 0 7
+% 0000000000 65535 f
+% 0000000060 00000 n
+% 0000000228 00000 n
+% 0000000424 00000 n
+% 0000000145 00000 n
+% 0000000333 00000 n
+% 0000000009 00000 n
+
+trailer
+<<
+    /Info 8 0 R
+    /Size 11
+    /Root 6 0 R
+>>
+startxref
+488
+%%EOF
