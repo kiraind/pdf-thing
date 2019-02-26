@@ -7,6 +7,171 @@ pub struct Meta {
     pub generator: String,
 }
 
+pub enum TextAlign {
+    Left    = 0,
+    Center  = 1,
+    Right   = 2,
+    Justify = 3,
+}
+
+pub enum FontWeight {
+    Weight100,
+    Weight200,
+    Weight300,
+    Weight400,
+    Weight500,
+    Weight600,
+    Weight700,
+    Weight800,
+    Weight900,
+}
+
+pub struct Style {
+    name: String,
+    pageMargins: [ f64; 4 ],
+    firstLineIndent: f64,
+    paragraphSpacing: f64,
+    columnSpacing: f64,
+    mainFontFamily: String,
+    mainFontSize: u32,
+    mainLineHeight: f64,
+    mainTextAlign: TextAlign,
+    mainTextHypnate: bool,
+    textEntryWidth: f64,
+    textEntryLeftLineWidth: f64,
+    textEntryBlockAlign: TextAlign,
+    textEntryLineNumbers: bool,
+    textEntryFontFamily: String,
+    textEntryFontWeight: FontWeight,
+    textEntryFontSize: u32,
+    textEntryLineHeight: f64,
+    textEntryTextAlign: TextAlign,
+    textEntryCaption: bool,
+    textEntryCaptionFontWeight: FontWeight,
+    textEntryCaptionAlign: TextAlign,
+    headingFontFamily: String,
+
+    h1_fontWeight: FontWeight,
+    h1_fontSize: u32,
+    h1_topMargin: f64,
+    h1_bottomMargin: f64,
+    h1_textAlign: TextAlign,
+
+    h2_fontWeight: FontWeight,
+    h2_fontSize: u32,
+    h2_topMargin: f64,
+    h2_bottomMargin: f64,
+    h2_textAlign: TextAlign,
+
+    h3_fontWeight: FontWeight,
+    h3_fontSize: u32,
+    h3_topMargin: f64,
+    h3_bottomMargin: f64,
+    h3_textAlign: TextAlign,
+
+    h4_fontWeight: FontWeight,
+    h4_fontSize: u32,
+    h4_topMargin: f64,
+    h4_bottomMargin: f64,
+    h4_textAlign: TextAlign,
+
+    h5_fontWeight: FontWeight,
+    h5_fontSize: u32,
+    h5_topMargin: f64,
+    h5_bottomMargin: f64,
+    h5_textAlign: TextAlign,
+
+    h6_fontWeight: FontWeight,
+    h6_fontSize: u32,
+    h6_topMargin: f64,
+    h6_bottomMargin: f64,
+    h6_textAlign: TextAlign,
+
+    listDefaultBullet: String,
+    listBulletWeight: FontWeight,
+    listBulletRightMargin: f64,
+    listTopMargin: f64,
+    listBottomMargin: f64 
+}
+
+impl Style {
+    fn default() -> Style {
+        Style {
+            name: "Default".to_string(),
+
+            pageMargins: [ 20.0, 20.0, 20.0, 20.0 ],
+            firstLineIndent: 10.0,
+            paragraphSpacing: 0.0,
+            columnSpacing: 10.0,
+
+            mainFontFamily: "Open Sans".to_string(),
+            mainFontSize: 12,
+            mainLineHeight: 1.5,
+            mainTextAlign: TextAlign::Justify,
+            mainTextHypnate: true,
+
+            textEntryWidth: 1.0,
+            textEntryLeftLineWidth: 0.0,
+            textEntryBlockAlign: TextAlign::Left,
+            textEntryLineNumbers: false,
+
+            textEntryFontFamily: "Roboto Mono".to_string(),
+            textEntryFontWeight: FontWeight::Weight400,
+            textEntryFontSize: 10,
+            textEntryLineHeight: 1.3,
+            textEntryTextAlign: TextAlign::Left,
+
+            textEntryCaption: false,
+            textEntryCaptionFontWeight: FontWeight::Weight400,
+            textEntryCaptionAlign: TextAlign::Left,
+
+            headingFontFamily: "Montserrat".to_string(),
+
+            h1_fontWeight: FontWeight::Weight600,
+            h1_fontSize: 36,
+            h1_topMargin: 26.0,
+            h1_bottomMargin: 10.0,
+            h1_textAlign: TextAlign::Left,
+
+            h2_fontWeight: FontWeight::Weight600,
+            h2_fontSize: 31,
+            h2_topMargin: 20.8,
+            h2_bottomMargin: 8.0,
+            h2_textAlign: TextAlign::Left,
+
+            h3_fontWeight: FontWeight::Weight600,
+            h3_fontSize: 26,
+            h3_topMargin: 15.6,
+            h3_bottomMargin: 6.0,
+            h3_textAlign: TextAlign::Left,
+
+            h4_fontWeight: FontWeight::Weight600,
+            h4_fontSize: 22,
+            h4_topMargin: 10.4,
+            h4_bottomMargin: 4.0,
+            h4_textAlign: TextAlign::Left,
+
+            h5_fontWeight: FontWeight::Weight600,
+            h5_fontSize: 17,
+            h5_topMargin: 5.2,
+            h5_bottomMargin: 2.0,
+            h5_textAlign: TextAlign::Left,
+
+            h6_fontWeight: FontWeight::Weight600,
+            h6_fontSize: 12,
+            h6_topMargin: 0.0,
+            h6_bottomMargin: 0.0,
+            h6_textAlign: TextAlign::Left,
+
+            listDefaultBullet: "—".to_string(),
+            listBulletWeight: FontWeight::Weight600,
+            listBulletRightMargin: 2.5,
+            listTopMargin: 2.0,
+            listBottomMargin: 2.0 
+        }
+    }
+}
+
 impl Meta {
     fn from_json(iter: &mut Iterator<Item=char>) -> Meta {
         let mut meta = Meta {
@@ -99,8 +264,8 @@ impl Page {
 
 pub struct Document {
     pub metadata: Meta,
-
     pub pages: Vec<Page>,
+    pub style: Style,
 }
 
 pub fn get_next_string(iter: &mut Iterator<Item=char>) -> Option<String> {
@@ -170,6 +335,7 @@ impl Document {
                 generator: ":edf-thing".to_string(),
             },
             pages: Vec::new(),
+            style: Style::default(),
         }
     }
 
@@ -184,6 +350,7 @@ impl Document {
                 generator: String::new(),
             },
             pages: Vec::new(),
+            style: Style::default(),
         };
 
         let mut chars_iter = json.chars();
