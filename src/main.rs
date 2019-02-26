@@ -42,6 +42,7 @@ fn main() {
 
     let doc = Document::from_json(&input_json);
 
+    println!("title:        '{}'", doc.metadata.title);
     println!("author:       '{}'", doc.metadata.author);
     println!("lang:         '{}'", doc.metadata.lang);
     println!("generator:    '{}'", doc.metadata.generator);

@@ -189,7 +189,7 @@ impl Meta {
             }
         }
 
-        while let Some(key) = get_next_string(iter) {
+        'outer: while let Some(key) = get_next_string(iter) {
             match key.as_ref() {
                 "title" => {
                     meta.title = get_next_string(iter).unwrap();
@@ -209,7 +209,15 @@ impl Meta {
                 "generator" => {
                     meta.generator = get_next_string(iter).unwrap();
                 },
-                _ => { println!("Unknown key: '{}'", key) }
+                _ => { println!("Unknown key of meta: '{}'", key) }
+            }
+
+            while let Some(ch) = iter.next() {
+                if ch == ',' {
+                    break;
+                } else if ch == '}' {
+                    break 'outer;
+                }
             }
         }
 
@@ -375,14 +383,15 @@ impl Document {
                         },
                         "meta" => {
                             doc.metadata = Meta::from_json(&mut chars_iter);
-                            // println!("Koko {}", chars_iter.next().unwrap());
                         },
                         "pages" => {
                             while let Some(page) = Page::from_json(&mut chars_iter) {
                                 doc.pages.push(page);
                             }
                         },
-                        _ => { /* todo warn */ }
+                        _ => {
+                            println!("Unknown key of document: '{}'", key);
+                        }
                     }
                 }
             }
