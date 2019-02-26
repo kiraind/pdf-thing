@@ -1,5 +1,28 @@
 #![allow(non_snake_case)]
 
+pub trait Atomic {
+
+}
+
+pub struct AtomicText {
+    text: String,
+    x: f64,
+    y: f64,
+    width: f64,
+    classes: Vec<String>,
+}
+
+impl Atomic for AtomicText {
+
+}
+
+pub struct Fragment {
+    page_number: u32,
+    x: f64,
+    y: f64,
+    classes: Vec<String>,
+}
+
 pub struct Meta {
     pub title: String,
     pub author: String,
@@ -241,10 +264,6 @@ impl Meta {
 
         meta
     }
-}
-
-pub struct Fragment {
-
 }
 
 pub struct Page {
