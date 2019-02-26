@@ -18,42 +18,34 @@ impl Meta {
             generator: String::new(),
         };
 
-        let mut level = 0;
-
         while let Some(ch) = iter.next() {
-            if level == 0 {
-                if ch == '{' {
-                    level += 1;
-                }
-                continue;
+            if ch == '{' {
+                break;
             }
+        }
 
-            if level == 1 {
-                if let Some(key) = get_next_string(iter) {
-                    match key.as_ref() {
-                        "title" => {
-                            meta.title = get_next_string(iter).unwrap();
-                        },
-                        "author" => {
-                            meta.author = get_next_string(iter).unwrap();
-                        },
-                        "lang" => {
-                            meta.lang = get_next_string(iter).unwrap();
-                        },
-                        "created" => {
-                            meta.created = get_next_string(iter).unwrap();
-                        },
-                        "edited" => {
-                            meta.edited = get_next_string(iter).unwrap();
-                        },
-                        "generator" => {
-                            meta.generator = get_next_string(iter).unwrap();
-                        },
-                        _ => { /* todo warn */ }
-                    }
-                }
+        while let Some(key) = get_next_string(iter) {
+            match key.as_ref() {
+                "title" => {
+                    meta.title = get_next_string(iter).unwrap();
+                },
+                "author" => {
+                    meta.author = get_next_string(iter).unwrap();
+                },
+                "lang" => {
+                    meta.lang = get_next_string(iter).unwrap();
+                },
+                "created" => {
+                    meta.created = get_next_string(iter).unwrap();
+                },
+                "edited" => {
+                    meta.edited = get_next_string(iter).unwrap();
+                },
+                "generator" => {
+                    meta.generator = get_next_string(iter).unwrap();
+                },
+                _ => { println!("Unknown key: '{}'", key) }
             }
-
         }
 
         meta
@@ -80,13 +72,28 @@ impl Page {
             }
         }
 
-        Some(
-            Page {
-                id: 0,
-                format: "".to_string(),
-                fragments: Vec::new(),
+        let mut page = Page {
+            id: 0xffffffff,
+            format: "".to_string(),
+            fragments: Vec::new(),
+        };
+
+        while let Some(key) = get_next_string(iter) {
+            match key.as_ref() {
+                "id" => {
+                    page.id = get_next_int(iter).unwrap() as u32;
+                },
+                "format" => {
+                    page.format = get_next_string(iter).unwrap();
+                },
+                "fragments" => {
+                    
+                },
+                _ => { /* todo warn */ }
             }
-        )
+        }
+
+        Some(page)
     }
 }
 
@@ -128,6 +135,27 @@ pub fn get_next_string(iter: &mut Iterator<Item=char>) -> Option<String> {
     }
 
     Some(string)
+}
+
+pub fn get_next_int(iter: &mut Iterator<Item=char>) -> Option<i64> {
+    let mut number: i64 = 0;
+
+    let mut started = false;
+
+    while let Some(ch) = iter.next() {
+        if ch.is_numeric() {
+            started = true;
+        } else if started {
+            break
+        }
+
+        if started {
+            number *= 10;
+            number += ( (ch as u32) - ('0' as u32) ) as i64;
+        }
+    }
+
+    Some(number)
 }
 
 impl Document {
@@ -180,6 +208,7 @@ impl Document {
                         },
                         "meta" => {
                             doc.metadata = Meta::from_json(&mut chars_iter);
+                            // println!("Koko {}", chars_iter.next().unwrap());
                         },
                         "pages" => {
                             while let Some(page) = Page::from_json(&mut chars_iter) {
