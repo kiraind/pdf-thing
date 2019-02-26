@@ -1,18 +1,10 @@
 use std::error::Error;
 use std::fs::File;
 use std::io::prelude::*;
-use std::io;
+// use std::io;
 
 mod edf;
 use edf::document::Document;
-
-struct AtomicText {
-    text: String,
-    x: f64,
-    y: f64,
-    width: f64,
-    classes: Vec<String>
-}
 
 fn main() {
     // let doc = Document::new();

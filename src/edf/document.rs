@@ -1,3 +1,5 @@
+#![allow(non_snake_case)]
+
 pub struct Meta {
     pub title: String,
     pub author: String,
@@ -7,6 +9,7 @@ pub struct Meta {
     pub generator: String,
 }
 
+#[allow(dead_code)]
 pub enum TextAlign {
     Left    = 0,
     Center  = 1,
@@ -14,6 +17,7 @@ pub enum TextAlign {
     Justify = 3,
 }
 
+#[allow(dead_code)]
 pub enum FontWeight {
     Weight100,
     Weight200,
@@ -26,6 +30,7 @@ pub enum FontWeight {
     Weight900,
 }
 
+#[allow(dead_code)]
 pub struct Style {
     name: String,
     pageMargins: [ f64; 4 ],
@@ -169,6 +174,27 @@ impl Style {
             listTopMargin: 2.0,
             listBottomMargin: 2.0 
         }
+    }
+
+    fn from_json(iter: &mut Iterator<Item=char>) -> Option<Style> {
+        #[allow(unused_mut)]
+        let mut style = Style::default();
+
+        let mut level = 0;
+
+        while let Some(ch) = iter.next() {
+            if ch == '{' {
+                level += 1;
+            } else if ch == '}' {
+                level -= 1;
+
+                if level == 0 {
+                    break;
+                }
+            }
+        }
+
+        Some(style)
     }
 }
 
@@ -344,6 +370,7 @@ pub fn get_next_int(iter: &mut Iterator<Item=char>) -> Option<i64> {
 }
 
 impl Document {
+    #[allow(dead_code)]
     pub fn new() -> Document {
         Document {
             metadata: Meta {
@@ -402,7 +429,7 @@ impl Document {
                             }
                         },
                         "style" => {
-                            println!("Wow, style!!!");
+                            doc.style = Style::from_json(&mut chars_iter).unwrap();
                         },
                         _ => {
                             println!("Unknown key of document: '{}'", key);
