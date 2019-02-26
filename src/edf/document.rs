@@ -211,14 +211,6 @@ impl Meta {
                 },
                 _ => { println!("Unknown key of meta: '{}'", key) }
             }
-
-            while let Some(ch) = iter.next() {
-                if ch == ',' {
-                    break;
-                } else if ch == '}' {
-                    break 'outer;
-                }
-            }
         }
 
         meta
@@ -278,14 +270,6 @@ impl Page {
                     println!("Unknown key of page '{}'", key);
                 }
             }
-
-            while let Some(ch) = iter.next() {
-                if ch == ',' {
-                    break;
-                } else if ch == '}' {
-                    break 'outer;
-                }
-            }
         }
 
         Some(page)
@@ -325,6 +309,12 @@ pub fn get_next_string(iter: &mut Iterator<Item=char>) -> Option<String> {
         }
 
         if !inside_str {
+            break;
+        }
+    }
+
+    while let Some(ch) = iter.next() {
+        if  ch == ':' || ch == ',' || ch == ']' || ch == '}' {
             break;
         }
     }
