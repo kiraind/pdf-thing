@@ -3,6 +3,9 @@ use std::fs::File;
 use std::io::prelude::*;
 use std::io;
 
+mod edf;
+use edf::document::Document;
+
 struct AtomicText {
     text: String,
     x: f64,
@@ -12,6 +15,10 @@ struct AtomicText {
 }
 
 fn main() {
+    // let doc = Document::new();
+
+    // return;
+
     let filename = "example.edf.json";
 
     let mut file = match File::open(&filename) {
@@ -25,12 +32,22 @@ fn main() {
         Ok(file) => file,
     };
 
-    let mut input_buffer = String::new();
-    file.read_to_string(&mut input_buffer);
+    let mut input_json = String::new();
+    let encoding_parsing_err = file.read_to_string(&mut input_json).is_err();
 
-    let mut bytes_iter = input_buffer.chars();
-
-    while let Some(ch) = bytes_iter.next() {
-        print!("{}", ch);
+    if encoding_parsing_err {
+        println!("Encoding error");
+        return;
     }
+
+    let doc = Document::from_json(&input_json);
+
+    println!("author: '{}'", doc.metadata.author);
+    println!("lang:   '{}'", doc.metadata.lang);
+
+    // let mut chars_iter = input_json.chars();
+
+    // while let Some(ch) = chars_iter.next() {
+    //     print!("{}", ch);
+    // }
 }
