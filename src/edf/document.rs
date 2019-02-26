@@ -251,7 +251,7 @@ impl Page {
             fragments: Vec::new(),
         };
 
-        while let Some(key) = get_next_string(iter) {
+        'outer: while let Some(key) = get_next_string(iter) {
             match key.as_ref() {
                 "id" => {
                     page.id = get_next_int(iter).unwrap() as u32;
@@ -260,9 +260,31 @@ impl Page {
                     page.format = get_next_string(iter).unwrap();
                 },
                 "fragments" => {
-                    
+                    let mut level = 0;
+
+                    while let Some(ch) = iter.next() {
+                        if ch == '[' {
+                            level += 1;
+                        } else if ch == ']' {
+                            level -= 1;
+                            
+                            if level == 0 {
+                                break;
+                            }
+                        }
+                    }
                 },
-                _ => { /* todo warn */ }
+                _ => {
+                    println!("Unknown key of page '{}'", key);
+                }
+            }
+
+            while let Some(ch) = iter.next() {
+                if ch == ',' {
+                    break;
+                } else if ch == '}' {
+                    break 'outer;
+                }
             }
         }
 
@@ -388,6 +410,9 @@ impl Document {
                             while let Some(page) = Page::from_json(&mut chars_iter) {
                                 doc.pages.push(page);
                             }
+                        },
+                        "style" => {
+                            println!("Wow, style!!!");
                         },
                         _ => {
                             println!("Unknown key of document: '{}'", key);
