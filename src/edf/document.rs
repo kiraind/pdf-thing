@@ -1,7 +1,3 @@
-pub struct Page {
-
-}
-
 pub struct Meta {
     pub title: String,
     pub author: String,
@@ -33,28 +29,28 @@ impl Meta {
             }
 
             if level == 1 {
-                let key = get_next_string(iter);
-
-                match key.as_ref() {
-                    "title" => {
-                        meta.title = get_next_string(iter);
-                    },
-                    "author" => {
-                        meta.author = get_next_string(iter);
-                    },
-                    "lang" => {
-                        meta.lang = get_next_string(iter);
-                    },
-                    "created" => {
-                        meta.created = get_next_string(iter);
-                    },
-                    "edited" => {
-                        meta.edited = get_next_string(iter);
-                    },
-                    "generator" => {
-                        meta.generator = get_next_string(iter);
-                    },
-                    _ => { /* todo warn */ }
+                if let Some(key) = get_next_string(iter) {
+                    match key.as_ref() {
+                        "title" => {
+                            meta.title = get_next_string(iter).unwrap();
+                        },
+                        "author" => {
+                            meta.author = get_next_string(iter).unwrap();
+                        },
+                        "lang" => {
+                            meta.lang = get_next_string(iter).unwrap();
+                        },
+                        "created" => {
+                            meta.created = get_next_string(iter).unwrap();
+                        },
+                        "edited" => {
+                            meta.edited = get_next_string(iter).unwrap();
+                        },
+                        "generator" => {
+                            meta.generator = get_next_string(iter).unwrap();
+                        },
+                        _ => { /* todo warn */ }
+                    }
                 }
             }
 
@@ -64,13 +60,43 @@ impl Meta {
     }
 }
 
+pub struct Fragment {
+
+}
+
+pub struct Page {
+    pub id: u32,
+    pub format: String,
+    pub fragments: Vec<Fragment>,
+}
+
+impl Page {
+    fn from_json(iter: &mut Iterator<Item=char>) -> Option<Page> {
+        while let Some(ch) = iter.next() {
+            if ch == '{' {
+                break;
+            } else if ch == ']' {
+                return None;
+            }
+        }
+
+        Some(
+            Page {
+                id: 0,
+                format: "".to_string(),
+                fragments: Vec::new(),
+            }
+        )
+    }
+}
+
 pub struct Document {
     pub metadata: Meta,
 
     pub pages: Vec<Page>,
 }
 
-pub fn get_next_string(iter: &mut Iterator<Item=char>) -> String {
+pub fn get_next_string(iter: &mut Iterator<Item=char>) -> Option<String> {
     let mut string = String::new();
 
     let mut inside_str = false;
@@ -80,8 +106,10 @@ pub fn get_next_string(iter: &mut Iterator<Item=char>) -> String {
         if !inside_str {
             if ch == '"' {
                 inside_str = true;
+            } else if ch == ',' || ch == '{' || ch == '}' || ch == '[' || ch == ']' {
+                return None
             } else {
-                continue
+                continue;
             }
         }
 
@@ -99,7 +127,7 @@ pub fn get_next_string(iter: &mut Iterator<Item=char>) -> String {
         }
     }
 
-    string
+    Some(string)
 }
 
 impl Document {
@@ -142,19 +170,24 @@ impl Document {
             }
 
             if level == 1 {
-                let key = get_next_string(&mut chars_iter);
-
-                match key.as_ref() {
-                    "doctype" => {
-                        // todo check for ':'
-                        let doctype = get_next_string(&mut chars_iter);
-                        
-                        println!("Found doctype: '{}'", doctype);
-                    },
-                    "meta" => {
-                        doc.metadata = Meta::from_json(&mut chars_iter);
+                if let Some(key) = get_next_string(&mut chars_iter) {
+                    match key.as_ref() {
+                        "doctype" => {
+                            // todo check for ':'
+                            let doctype = get_next_string(&mut chars_iter).unwrap();
+                            
+                            println!("Found doctype: '{}'", doctype);
+                        },
+                        "meta" => {
+                            doc.metadata = Meta::from_json(&mut chars_iter);
+                        },
+                        "pages" => {
+                            while let Some(page) = Page::from_json(&mut chars_iter) {
+                                doc.pages.push(page);
+                            }
+                        },
+                        _ => { /* todo warn */ }
                     }
-                    _ => { /* todo warn */ }
                 }
             }
         }
