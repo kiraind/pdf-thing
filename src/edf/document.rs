@@ -1,7 +1,7 @@
 #![allow(non_snake_case)]
 
 pub trait Atomic {
-
+    
 }
 
 pub struct AtomicText {
@@ -12,15 +12,127 @@ pub struct AtomicText {
     classes: Vec<String>,
 }
 
-impl Atomic for AtomicText {
+impl AtomicText {
+    fn from_json(iter: &mut Iterator<Item=char>) -> Option<AtomicText> {
+        let atomic = AtomicText {
+            text: "".to_string(),
+            x: 0.0,
+            y: 0.0,
+            width: 0.0,
+            classes: vec![],
+        };
 
+        while let Some(ch) = iter.next() {
+            if ch == '{' {
+                break;
+            } else if ch == ']' {
+                return None;
+            }
+        }
+
+        // todo
+
+        let mut level = 0;
+
+        while let Some(ch) = iter.next() {
+            if ch == '{' {
+                level += 1;
+            } else if ch == '}' {
+                level -= 1;
+                
+                if level == 0 {
+                    break;
+                }
+            }
+        }
+
+        Some(atomic)
+    }
+}
+
+impl Atomic for AtomicText {
+    
 }
 
 pub struct Fragment {
     page_number: u32,
     x: f64,
     y: f64,
+    height: f64,
     classes: Vec<String>,
+    atomics: Vec<AtomicText>,
+}
+
+impl Fragment {
+    fn from_json(iter: &mut Iterator<Item=char>) -> Option<Fragment> {
+        while let Some(ch) = iter.next() {
+            if ch == '{' {
+                break;
+            } else if ch == ']' {
+                return None;
+            }
+        }
+
+        let mut fragment = Fragment {
+            page_number: 0,
+            x: 0.0,
+            y: 0.0,
+            height: 0.0,
+            classes: vec![],
+            atomics: vec![],
+        };
+
+        while let Some(key) = get_next_string(iter) {
+            match key.as_ref() {
+                "pageNumber" => {
+                    fragment.page_number = get_next_int(iter).unwrap() as u32;
+                },
+                "x" => {
+                    fragment.x = get_next_float(iter).unwrap();
+                },
+                "y" => {
+                    fragment.y = get_next_float(iter).unwrap();
+                },
+                "height" => {
+                    fragment.height = get_next_float(iter).unwrap();
+                },
+                "classes" => {
+                    while let Some(ch) = iter.next() {
+                        if ch == '[' {
+                            break;
+                        }
+                    }
+
+                    'outer: while let Some(class) = get_next_string(iter) {
+                        fragment.classes.push(class);
+
+                        while let Some(ch) = iter.next() {
+                            if ch == ']' {
+                                while let Some(ch) = iter.next() {
+                                    if ch == ',' || ch == '}' {
+                                        break;
+                                    }
+                                }
+                                break 'outer;
+                            } else {
+                                if ch == ',' {
+                                    break;
+                                }
+                            }
+                        }
+                    }
+                },
+                "atomics" => {
+                    while let Some(atomic) = AtomicText::from_json(iter) {
+                        fragment.atomics.push(atomic);
+                    }
+                },
+                _ => { println!("Unknown key of fragment: '{}'", key) }
+            }
+        }
+
+        Some(fragment)
+    }
 }
 
 pub struct Meta {
@@ -238,7 +350,7 @@ impl Meta {
             }
         }
 
-        'outer: while let Some(key) = get_next_string(iter) {
+        while let Some(key) = get_next_string(iter) {
             match key.as_ref() {
                 "title" => {
                     meta.title = get_next_string(iter).unwrap();
@@ -297,19 +409,7 @@ impl Page {
                     page.format = get_next_string(iter).unwrap();
                 },
                 "fragments" => {
-                    let mut level = 0;
-
-                    while let Some(ch) = iter.next() {
-                        if ch == '[' {
-                            level += 1;
-                        } else if ch == ']' {
-                            level -= 1;
-                            
-                            if level == 0 {
-                                break;
-                            }
-                        }
-                    }
+                    page.fragments.push( Fragment::from_json(iter).unwrap() );
                 },
                 _ => {
                     println!("Unknown key of page '{}'", key);
@@ -382,6 +482,41 @@ pub fn get_next_int(iter: &mut Iterator<Item=char>) -> Option<i64> {
         if started {
             number *= 10;
             number += ( (ch as u32) - ('0' as u32) ) as i64;
+        }
+    }
+
+    Some(number)
+}
+
+pub fn get_next_float(iter: &mut Iterator<Item=char>) -> Option<f64> {
+    let mut number: f64 = 0.0;
+
+    let mut started    = false;
+    let mut whole_part = true;
+    let mut fractional_order = 0.1;
+
+    while let Some(ch) = iter.next() {
+        if ch == '.' {
+            whole_part = false;
+            continue;
+        }
+
+        if ch.is_numeric() {
+            started = true;
+        } else if started {
+            break
+        }
+
+        if started {
+            let digit = ( (ch as u32) - ('0' as u32) ) as f64;
+
+            if whole_part {
+                number *= 10.0;
+                number += digit;
+            } else {
+                number += fractional_order * digit;
+                fractional_order /= 10.0;
+            }
         }
     }
 

@@ -38,8 +38,9 @@ fn main() {
     println!("author:       '{}'", doc.metadata.author);
     println!("lang:         '{}'", doc.metadata.lang);
     println!("generator:    '{}'", doc.metadata.generator);
-    println!("pages:        {}", doc.pages.len());
+    println!("pages:         {}", doc.pages.len());
     println!("page format:  '{}'", doc.pages[0].format);
+    println!("page fragms:   {}", doc.pages[0].fragments.len());
 
     // let mut chars_iter = input_json.chars();
 
