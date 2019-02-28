@@ -1,3 +1,7 @@
+#[macro_use]
+extern crate serde_derive;
+use serde_json::Result;
+
 use std::error::Error;
 use std::fs::File;
 use std::io::prelude::*;
@@ -5,6 +9,39 @@ use std::io::prelude::*;
 
 mod edf;
 use edf::document::Document;
+
+use serde_repr::*;
+
+#[derive(Serialize_repr, Deserialize_repr)]
+#[repr(u32)]
+enum Gender {
+    Male = 0,
+    Female = 1,
+}
+impl PartialEq for Gender {
+    fn eq(&self, other: &Gender) -> bool {
+        match (self, other) {
+            (&Gender::Female, &Gender::Female) => true,
+            (&Gender::Male, &Gender::Male) => true,
+            _ => false,
+        }
+    }
+}
+
+#[derive(Serialize, Deserialize)]
+struct Location {
+    country: String,
+    zipcode: String,
+}
+
+#[derive(Serialize, Deserialize)]
+struct Person {
+    name: String,
+    age: u8,
+    location: Location,
+    phones: Vec<String>,
+    gender: Gender,
+}
 
 fn main() {
     // let doc = Document::new();
@@ -32,19 +69,15 @@ fn main() {
         return;
     }
 
-    let doc = Document::from_json(&input_json);
+    let res: Result<Document> = serde_json::from_str(&input_json);
 
-    println!("title:        '{}'", doc.metadata.title);
-    println!("author:       '{}'", doc.metadata.author);
-    println!("lang:         '{}'", doc.metadata.lang);
-    println!("generator:    '{}'", doc.metadata.generator);
-    println!("pages:         {}", doc.pages.len());
-    println!("page format:  '{}'", doc.pages[0].format);
-    println!("page fragms:   {}", doc.pages[0].fragments.len());
-
-    // let mut chars_iter = input_json.chars();
-
-    // while let Some(ch) = chars_iter.next() {
-    //     print!("{}", ch);
-    // }
+    if let Ok(doc) = res {
+        println!("title:        '{}'", doc.meta.title);
+        println!("author:       '{}'", doc.meta.author);
+        println!("lang:         '{}'", doc.meta.lang);
+        println!("generator:    '{}'", doc.meta.generator);
+        println!("pages:         {}", doc.pages.len());
+    } else if let Err(err) = res {
+        println!("JSON parsing error {}", err);
+    } 
 }

@@ -14,7 +14,7 @@
             "format": "A4-vertical",
             "fragments": [
                 {
-                    "pageNumber": 0,
+                    "page_number": 0,
                     "x": 20,
                     "y": 20,
                     "classes": [],
@@ -37,7 +37,7 @@
                     "height": 39.63333333333333
                 },
                 {
-                    "pageNumber": 0,
+                    "page_number": 0,
                     "x": 20,
                     "y": 59.63333333333333,
                     "classes": [],
@@ -74,7 +74,7 @@
                     "height": 12.5
                 },
                 {
-                    "pageNumber": 0,
+                    "page_number": 0,
                     "x": 20,
                     "y": 72.13333333333333,
                     "classes": [],
@@ -111,7 +111,7 @@
                     "height": 12.5
                 },
                 {
-                    "pageNumber": 0,
+                    "page_number": 0,
                     "x": 20,
                     "y": 84.63333333333333,
                     "classes": [],
@@ -134,7 +134,7 @@
                     "height": 6.25
                 },
                 {
-                    "pageNumber": 0,
+                    "page_number": 0,
                     "x": 20,
                     "y": 90.88333333333333,
                     "classes": [],
@@ -353,7 +353,7 @@
                     "height": 47.75
                 },
                 {
-                    "pageNumber": 0,
+                    "page_number": 0,
                     "x": 20,
                     "y": 138.63333333333333,
                     "classes": [],
@@ -436,11 +436,13 @@
         "firstLineIndent": 10,
         "paragraphSpacing": 0,
         "columnSpacing": 10,
+        
         "mainFontFamily": "Open Sans",
         "mainFontSize": 12,
         "mainLineHeight": 1.5,
         "mainTextAlign": 3,
         "mainTextHypnate": true,
+
         "textEntryWidth": 1,
         "textEntryLeftLineWidth": 0,
         "textEntryBlockAlign": 0,
@@ -453,37 +455,45 @@
         "textEntryCaption": false,
         "textEntryCaptionFontWeight": 400,
         "textEntryCaptionAlign": 0,
+
         "headingFontFamily": "Montserrat",
+
         "h1_fontWeight": 600,
         "h1_fontSize": 36,
         "h1_topMargin": 26,
         "h1_bottomMargin": 10,
         "h1_textAlign": 0,
+
         "h2_fontWeight": 600,
         "h2_fontSize": 31,
         "h2_topMargin": 20.8,
         "h2_bottomMargin": 8,
         "h2_textAlign": 0,
+
         "h3_fontWeight": 600,
         "h3_fontSize": 26,
         "h3_topMargin": 15.6,
         "h3_bottomMargin": 6,
         "h3_textAlign": 0,
+
         "h4_fontWeight": 600,
         "h4_fontSize": 22,
         "h4_topMargin": 10.4,
         "h4_bottomMargin": 4,
         "h4_textAlign": 0,
+
         "h5_fontWeight": 600,
         "h5_fontSize": 17,
         "h5_topMargin": 5.2,
         "h5_bottomMargin": 2,
         "h5_textAlign": 0,
+
         "h6_fontWeight": 600,
         "h6_fontSize": 12,
         "h6_topMargin": 0,
         "h6_bottomMargin": 0,
         "h6_textAlign": 0,
+
         "listDefaultBullet": "—",
         "listBulletWeight": 600,
         "listBulletRightMargin": 2.5,
