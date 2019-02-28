@@ -20,7 +20,6 @@ fn main() {
     let text = "Проблемы координации";
 
     let mut font_reader = std::io::Cursor::new(include_bytes!("../fonts/Montserrat-SemiBold.ttf").as_ref());
-
     let font = doc.add_external_font(&mut font_reader).unwrap();
 
     // `use_text` is a wrapper around making a simple string
@@ -41,6 +40,8 @@ fn main() {
     let font2 = doc.add_external_font(&mut font_reader2).unwrap();
 
     let font_size2 = 12;
+
+    current_layer.
 
     current_layer.use_text(
         text2,
