@@ -5,426 +5,9 @@
         "author": "kiraind",
         "lang": "ru",
         "created": "2019-02-24T20:34:28.064Z",
-        "edited": "2019-02-24T20:34:28.064Z",
-        "generator": "human"
+        "edited": "2019-03-01T06:30:49.166Z",
+        "generator": "mysh@edf-js"
     },
-    "pages": [
-        {
-            "id": 0,
-            "format": "A4-vertical",
-            "fragments": [
-                {
-                    "page_number": 0,
-                    "x": 20,
-                    "y": 20,
-                    "classes": [],
-                    "atomics": [
-                        {
-                            "x": 0,
-                            "y": 20.8,
-                            "classes": [
-                                "heading2"
-                            ],
-                            "width": 170,
-                            "text": {
-                                "chars": "Проблемы координации",
-                                "attrs": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-                                "length": 20
-                            },
-                            "align": 0
-                        }
-                    ],
-                    "height": 39.63333333333333
-                },
-                {
-                    "page_number": 0,
-                    "x": 20,
-                    "y": 59.63333333333333,
-                    "classes": [],
-                    "atomics": [
-                        {
-                            "x": 10,
-                            "y": 0,
-                            "classes": [
-                                "main"
-                            ],
-                            "width": 160,
-                            "text": {
-                                "chars": "Когда они оказались в кабинете, профессор Квиррелл запечатал дверь, раз-",
-                                "attrs": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32 ],
-                                "length": 72
-                            },
-                            "align": 3
-                        },
-                        {
-                            "x": 0,
-                            "y": 6.25,
-                            "classes": [
-                                "main"
-                            ],
-                            "width": 170,
-                            "text": {
-                                "chars": "валился в кресле и заговорил.",
-                                "attrs": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-                                "length": 29
-                            },
-                            "align": 0
-                        }
-                    ],
-                    "height": 12.5
-                },
-                {
-                    "page_number": 0,
-                    "x": 20,
-                    "y": 72.13333333333333,
-                    "classes": [],
-                    "atomics": [
-                        {
-                            "x": 10,
-                            "y": 0,
-                            "classes": [
-                                "main"
-                            ],
-                            "width": 160,
-                            "text": {
-                                "chars": "Его голос был очень спокоен, но это пробирало Гарри гораздо сильнее, чем",
-                                "attrs": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-                                "length": 72
-                            },
-                            "align": 3
-                        },
-                        {
-                            "x": 0,
-                            "y": 6.25,
-                            "classes": [
-                                "main"
-                            ],
-                            "width": 170,
-                            "text": {
-                                "chars": "если бы профессор Квиррелл орал.",
-                                "attrs": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-                                "length": 32
-                            },
-                            "align": 0
-                        }
-                    ],
-                    "height": 12.5
-                },
-                {
-                    "page_number": 0,
-                    "x": 20,
-                    "y": 84.63333333333333,
-                    "classes": [],
-                    "atomics": [
-                        {
-                            "x": 10,
-                            "y": 0,
-                            "classes": [
-                                "main"
-                            ],
-                            "width": 160,
-                            "text": {
-                                "chars": "Это списочек не к месту для образца:",
-                                "attrs": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-                                "length": 36
-                            },
-                            "align": 0
-                        }
-                    ],
-                    "height": 6.25
-                },
-                {
-                    "page_number": 0,
-                    "x": 20,
-                    "y": 90.88333333333333,
-                    "classes": [],
-                    "atomics": [
-                        {
-                            "x": 0,
-                            "y": 2,
-                            "classes": [
-                                "main",
-                                "unselectable",
-                                "list-bullet"
-                            ],
-                            "width": 7.5,
-                            "text": {
-                                "chars": "1.",
-                                "attrs": [ 0, 0 ],
-                                "length": 2
-                            },
-                            "align": 2
-                        },
-                        {
-                            "x": 10,
-                            "y": 2,
-                            "classes": [
-                                "main"
-                            ],
-                            "width": 160,
-                            "text": {
-                                "chars": "Первый айтем в списке;",
-                                "attrs": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-                                "length": 22
-                            },
-                            "align": 0
-                        },
-                        {
-                            "x": 0,
-                            "y": 8.25,
-                            "classes": [
-                                "main",
-                                "unselectable",
-                                "list-bullet"
-                            ],
-                            "width": 7.5,
-                            "text": {
-                                "chars": "2.",
-                                "attrs": [ 0, 0 ],
-                                "length": 2
-                            },
-                            "align": 2
-                        },
-                        {
-                            "x": 10,
-                            "y": 8.25,
-                            "classes": [
-                                "main"
-                            ],
-                            "width": 160,
-                            "text": {
-                                "chars": "Продам гараж;",
-                                "attrs": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-                                "length": 13
-                            },
-                            "align": 0
-                        },
-                        {
-                            "x": 0,
-                            "y": 14.5,
-                            "classes": [
-                                "main",
-                                "unselectable",
-                                "list-bullet"
-                            ],
-                            "width": 7.5,
-                            "text": {
-                                "chars": "3.",
-                                "attrs": [ 0, 0 ],
-                                "length": 2
-                            },
-                            "align": 2
-                        },
-                        {
-                            "x": 10,
-                            "y": 14.5,
-                            "classes": [
-                                "main"
-                            ],
-                            "width": 160,
-                            "text": {
-                                "chars": "Почему у меня стоит купить гараж:",
-                                "attrs": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-                                "length": 33
-                            },
-                            "align": 0
-                        },
-                        {
-                            "x": 10,
-                            "y": 20.75,
-                            "classes": [
-                                "main",
-                                "unselectable",
-                                "list-bullet"
-                            ],
-                            "width": 7.5,
-                            "text": {
-                                "chars": "—",
-                                "attrs": [ 0 ],
-                                "length": 1
-                            },
-                            "align": 2
-                        },
-                        {
-                            "x": 20,
-                            "y": 20.75,
-                            "classes": [
-                                "main"
-                            ],
-                            "width": 150,
-                            "text": {
-                                "chars": "Гаражи это круто;",
-                                "attrs": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-                                "length": 17
-                            },
-                            "align": 0
-                        },
-                        {
-                            "x": 10,
-                            "y": 27,
-                            "classes": [
-                                "main",
-                                "unselectable",
-                                "list-bullet"
-                            ],
-                            "width": 7.5,
-                            "text": {
-                                "chars": "—",
-                                "attrs": [ 0 ],
-                                "length": 1
-                            },
-                            "align": 2
-                        },
-                        {
-                            "x": 20,
-                            "y": 27,
-                            "classes": [
-                                "main"
-                            ],
-                            "width": 150,
-                            "text": {
-                                "chars": "Я не Артём;",
-                                "attrs": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-                                "length": 11
-                            },
-                            "align": 0
-                        },
-                        {
-                            "x": 10,
-                            "y": 33.25,
-                            "classes": [
-                                "main",
-                                "unselectable",
-                                "list-bullet"
-                            ],
-                            "width": 7.5,
-                            "text": {
-                                "chars": "—",
-                                "attrs": [ 0 ],
-                                "length": 1
-                            },
-                            "align": 2
-                        },
-                        {
-                            "x": 20,
-                            "y": 33.25,
-                            "classes": [
-                                "main"
-                            ],
-                            "width": 150,
-                            "text": {
-                                "chars": "Ну пожалуйста…",
-                                "attrs": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-                                "length": 13
-                            },
-                            "align": 0
-                        },
-                        {
-                            "x": 0,
-                            "y": 39.5,
-                            "classes": [
-                                "main",
-                                "unselectable",
-                                "list-bullet"
-                            ],
-                            "width": 7.5,
-                            "text": {
-                                "chars": "4.",
-                                "attrs": [ 0, 0 ],
-                                "length": 2
-                            },
-                            "align": 2
-                        },
-                        {
-                            "x": 10,
-                            "y": 39.5,
-                            "classes": [
-                                "main"
-                            ],
-                            "width": 160,
-                            "text": {
-                                "chars": "Конец списка.",
-                                "attrs": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-                                "length": 13
-                            },
-                            "align": 0
-                        }
-                    ],
-                    "height": 47.75
-                },
-                {
-                    "page_number": 0,
-                    "x": 20,
-                    "y": 138.63333333333333,
-                    "classes": [],
-                    "atomics": [
-                        {
-                            "x": 10,
-                            "y": 0,
-                            "classes": [
-                                "main"
-                            ],
-                            "width": 160,
-                            "text": {
-                                "chars": "— Я пытаюсь, — тихо сказал тот, — принимать во внимание вашу юность. Я",
-                                "attrs": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-                                "length": 70
-                            },
-                            "align": 3
-                        },
-                        {
-                            "x": 0,
-                            "y": 6.25,
-                            "classes": [
-                                "main"
-                            ],
-                            "width": 170,
-                            "text": {
-                                "chars": "и сам в ваши годы был болваном, каких поискать. Вы говорите взрослыми слова-",
-                                "attrs": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32 ],
-                                "length": 76
-                            },
-                            "align": 3
-                        },
-                        {
-                            "x": 0,
-                            "y": 12.5,
-                            "classes": [
-                                "main"
-                            ],
-                            "width": 170,
-                            "text": {
-                                "chars": "ми и суёте нос во взрослые игры, и иногда я забываю, что вы просто беспокой-",
-                                "attrs": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32 ],
-                                "length": 76
-                            },
-                            "align": 3
-                        },
-                        {
-                            "x": 0,
-                            "y": 18.75,
-                            "classes": [
-                                "main"
-                            ],
-                            "width": 170,
-                            "text": {
-                                "chars": "ный ребёнок.",
-                                "attrs": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-                                "length": 12
-                            },
-                            "align": 0
-                        }
-                    ],
-                    "height": 25.4
-                }
-            ]
-        },
-        {
-            "id": 1,
-            "format": "A4-vertical",
-            "fragments": []
-        }
-    ],
     "style": {
         "name": "Default",
         "pageMargins": [
@@ -436,13 +19,11 @@
         "firstLineIndent": 10,
         "paragraphSpacing": 0,
         "columnSpacing": 10,
-        
         "mainFontFamily": "Open Sans",
         "mainFontSize": 12,
         "mainLineHeight": 1.5,
         "mainTextAlign": 3,
         "mainTextHypnate": true,
-
         "textEntryWidth": 1,
         "textEntryLeftLineWidth": 0,
         "textEntryBlockAlign": 0,
@@ -455,49 +36,1287 @@
         "textEntryCaption": false,
         "textEntryCaptionFontWeight": 400,
         "textEntryCaptionAlign": 0,
-
         "headingFontFamily": "Montserrat",
-
         "h1_fontWeight": 600,
         "h1_fontSize": 36,
         "h1_topMargin": 26,
-        "h1_bottomMargin": 10,
+        "h1_bottomMargin": 7.5,
         "h1_textAlign": 0,
-
         "h2_fontWeight": 600,
         "h2_fontSize": 31,
         "h2_topMargin": 20.8,
-        "h2_bottomMargin": 8,
+        "h2_bottomMargin": 6,
         "h2_textAlign": 0,
-
         "h3_fontWeight": 600,
         "h3_fontSize": 26,
         "h3_topMargin": 15.6,
-        "h3_bottomMargin": 6,
+        "h3_bottomMargin": 4.5,
         "h3_textAlign": 0,
-
         "h4_fontWeight": 600,
         "h4_fontSize": 22,
         "h4_topMargin": 10.4,
-        "h4_bottomMargin": 4,
+        "h4_bottomMargin": 3,
         "h4_textAlign": 0,
-
         "h5_fontWeight": 600,
         "h5_fontSize": 17,
         "h5_topMargin": 5.2,
-        "h5_bottomMargin": 2,
+        "h5_bottomMargin": 1.5,
         "h5_textAlign": 0,
-
         "h6_fontWeight": 600,
         "h6_fontSize": 12,
         "h6_topMargin": 0,
         "h6_bottomMargin": 0,
         "h6_textAlign": 0,
-
         "listDefaultBullet": "—",
         "listBulletWeight": 600,
         "listBulletRightMargin": 2.5,
         "listTopMargin": 2,
         "listBottomMargin": 2
-    }
+    },
+    "pages": [
+        {
+            "id": 0,
+            "format": "A4-vertical",
+            "fragments": [
+                {
+                    "page_number": 0,
+                    "x": 20,
+                    "y": 20,
+                    "classes": [],
+                    "height": 37.63333333333333,
+                    "atomics": [
+                        {
+                            "x": 0,
+                            "y": 20.8,
+                            "classes": [
+                                "heading2"
+                            ],
+                            "width": 170,
+                            "text": {
+                                "length": 20,
+                                "chars": "Проблемы координации",
+                                "attrs": [
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0
+                                ]
+                            },
+                            "align": 0
+                        }
+                    ]
+                },
+                {
+                    "page_number": 0,
+                    "x": 20,
+                    "y": 57.63333333333333,
+                    "classes": [],
+                    "height": 12.5,
+                    "atomics": [
+                        {
+                            "x": 10,
+                            "y": 0,
+                            "classes": [
+                                "main"
+                            ],
+                            "width": 160,
+                            "text": {
+                                "length": 72,
+                                "chars": "Когда они оказались в кабинете, профессор Квиррелл запечатал дверь, раз-",
+                                "attrs": [
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    32
+                                ]
+                            },
+                            "align": 3
+                        },
+                        {
+                            "x": 0,
+                            "y": 6.25,
+                            "classes": [
+                                "main"
+                            ],
+                            "width": 170,
+                            "text": {
+                                "length": 29,
+                                "chars": "валился в кресле и заговорил.",
+                                "attrs": [
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0
+                                ]
+                            },
+                            "align": 0
+                        }
+                    ]
+                },
+                {
+                    "page_number": 0,
+                    "x": 20,
+                    "y": 70.13333333333333,
+                    "classes": [],
+                    "height": 12.5,
+                    "atomics": [
+                        {
+                            "x": 10,
+                            "y": 0,
+                            "classes": [
+                                "main"
+                            ],
+                            "width": 160,
+                            "text": {
+                                "length": 72,
+                                "chars": "Его голос был очень спокоен, но это пробирало Гарри гораздо сильнее, чем",
+                                "attrs": [
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0
+                                ]
+                            },
+                            "align": 3
+                        },
+                        {
+                            "x": 0,
+                            "y": 6.25,
+                            "classes": [
+                                "main"
+                            ],
+                            "width": 170,
+                            "text": {
+                                "length": 32,
+                                "chars": "если бы профессор Квиррелл орал.",
+                                "attrs": [
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0
+                                ]
+                            },
+                            "align": 0
+                        }
+                    ]
+                },
+                {
+                    "page_number": 0,
+                    "x": 20,
+                    "y": 82.63333333333333,
+                    "classes": [],
+                    "height": 6.25,
+                    "atomics": [
+                        {
+                            "x": 10,
+                            "y": 0,
+                            "classes": [
+                                "main"
+                            ],
+                            "width": 160,
+                            "text": {
+                                "length": 36,
+                                "chars": "Это списочек не к месту для образца:",
+                                "attrs": [
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0
+                                ]
+                            },
+                            "align": 0
+                        }
+                    ]
+                },
+                {
+                    "page_number": 0,
+                    "x": 20,
+                    "y": 88.88333333333333,
+                    "classes": [],
+                    "height": 47.75,
+                    "atomics": [
+                        {
+                            "x": 0,
+                            "y": 2,
+                            "classes": [
+                                "main",
+                                "unselectable",
+                                "list-bullet"
+                            ],
+                            "width": 7.5,
+                            "text": {
+                                "length": 2,
+                                "chars": "1.",
+                                "attrs": [
+                                    0,
+                                    0
+                                ]
+                            },
+                            "align": 2
+                        },
+                        {
+                            "x": 10,
+                            "y": 2,
+                            "classes": [
+                                "main"
+                            ],
+                            "width": 160,
+                            "text": {
+                                "length": 22,
+                                "chars": "Первый айтем в списке;",
+                                "attrs": [
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0
+                                ]
+                            },
+                            "align": 0
+                        },
+                        {
+                            "x": 0,
+                            "y": 8.25,
+                            "classes": [
+                                "main",
+                                "unselectable",
+                                "list-bullet"
+                            ],
+                            "width": 7.5,
+                            "text": {
+                                "length": 2,
+                                "chars": "2.",
+                                "attrs": [
+                                    0,
+                                    0
+                                ]
+                            },
+                            "align": 2
+                        },
+                        {
+                            "x": 10,
+                            "y": 8.25,
+                            "classes": [
+                                "main"
+                            ],
+                            "width": 160,
+                            "text": {
+                                "length": 13,
+                                "chars": "Продам гараж;",
+                                "attrs": [
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0
+                                ]
+                            },
+                            "align": 0
+                        },
+                        {
+                            "x": 0,
+                            "y": 14.5,
+                            "classes": [
+                                "main",
+                                "unselectable",
+                                "list-bullet"
+                            ],
+                            "width": 7.5,
+                            "text": {
+                                "length": 2,
+                                "chars": "3.",
+                                "attrs": [
+                                    0,
+                                    0
+                                ]
+                            },
+                            "align": 2
+                        },
+                        {
+                            "x": 10,
+                            "y": 14.5,
+                            "classes": [
+                                "main"
+                            ],
+                            "width": 160,
+                            "text": {
+                                "length": 33,
+                                "chars": "Почему у меня стоит купить гараж:",
+                                "attrs": [
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0
+                                ]
+                            },
+                            "align": 0
+                        },
+                        {
+                            "x": 10,
+                            "y": 20.75,
+                            "classes": [
+                                "main",
+                                "unselectable",
+                                "list-bullet"
+                            ],
+                            "width": 7.5,
+                            "text": {
+                                "length": 1,
+                                "chars": "—",
+                                "attrs": [
+                                    0
+                                ]
+                            },
+                            "align": 2
+                        },
+                        {
+                            "x": 20,
+                            "y": 20.75,
+                            "classes": [
+                                "main"
+                            ],
+                            "width": 150,
+                            "text": {
+                                "length": 17,
+                                "chars": "Гаражи это круто;",
+                                "attrs": [
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0
+                                ]
+                            },
+                            "align": 0
+                        },
+                        {
+                            "x": 10,
+                            "y": 27,
+                            "classes": [
+                                "main",
+                                "unselectable",
+                                "list-bullet"
+                            ],
+                            "width": 7.5,
+                            "text": {
+                                "length": 1,
+                                "chars": "—",
+                                "attrs": [
+                                    0
+                                ]
+                            },
+                            "align": 2
+                        },
+                        {
+                            "x": 20,
+                            "y": 27,
+                            "classes": [
+                                "main"
+                            ],
+                            "width": 150,
+                            "text": {
+                                "length": 11,
+                                "chars": "Я не Артем;",
+                                "attrs": [
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0
+                                ]
+                            },
+                            "align": 0
+                        },
+                        {
+                            "x": 10,
+                            "y": 33.25,
+                            "classes": [
+                                "main",
+                                "unselectable",
+                                "list-bullet"
+                            ],
+                            "width": 7.5,
+                            "text": {
+                                "length": 1,
+                                "chars": "—",
+                                "attrs": [
+                                    0
+                                ]
+                            },
+                            "align": 2
+                        },
+                        {
+                            "x": 20,
+                            "y": 33.25,
+                            "classes": [
+                                "main"
+                            ],
+                            "width": 150,
+                            "text": {
+                                "length": 16,
+                                "chars": "Ну пожалуйста...",
+                                "attrs": [
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0
+                                ]
+                            },
+                            "align": 0
+                        },
+                        {
+                            "x": 0,
+                            "y": 39.5,
+                            "classes": [
+                                "main",
+                                "unselectable",
+                                "list-bullet"
+                            ],
+                            "width": 7.5,
+                            "text": {
+                                "length": 2,
+                                "chars": "4.",
+                                "attrs": [
+                                    0,
+                                    0
+                                ]
+                            },
+                            "align": 2
+                        },
+                        {
+                            "x": 10,
+                            "y": 39.5,
+                            "classes": [
+                                "main"
+                            ],
+                            "width": 160,
+                            "text": {
+                                "length": 13,
+                                "chars": "Конец списка.",
+                                "attrs": [
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0
+                                ]
+                            },
+                            "align": 0
+                        }
+                    ]
+                },
+                {
+                    "page_number": 0,
+                    "x": 20,
+                    "y": 136.63333333333333,
+                    "classes": [],
+                    "height": 37.5,
+                    "atomics": [
+                        {
+                            "x": 10,
+                            "y": 0,
+                            "classes": [
+                                "main"
+                            ],
+                            "width": 160,
+                            "text": {
+                                "length": 70,
+                                "chars": "— Я пытаюсь, — тихо сказал тот, — принимать во внимание вашу юность. Я",
+                                "attrs": [
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0
+                                ]
+                            },
+                            "align": 3
+                        },
+                        {
+                            "x": 0,
+                            "y": 6.25,
+                            "classes": [
+                                "main"
+                            ],
+                            "width": 170,
+                            "text": {
+                                "length": 76,
+                                "chars": "и сам в ваши годы был болваном, каких поискать. Вы говорите взрослыми слова-",
+                                "attrs": [
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    32
+                                ]
+                            },
+                            "align": 3
+                        },
+                        {
+                            "x": 0,
+                            "y": 12.5,
+                            "classes": [
+                                "main"
+                            ],
+                            "width": 170,
+                            "text": {
+                                "length": 76,
+                                "chars": "ми и суёте нос во взрослые игры, и иногда я забываю, что вы просто беспокой-",
+                                "attrs": [
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    32
+                                ]
+                            },
+                            "align": 3
+                        },
+                        {
+                            "x": 0,
+                            "y": 18.75,
+                            "classes": [
+                                "main"
+                            ],
+                            "width": 170,
+                            "text": {
+                                "length": 75,
+                                "chars": "ный ребёнок. Надеюсь, мистер Поттер, что ваше сегодняшнее ребячество не по-",
+                                "attrs": [
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    32
+                                ]
+                            },
+                            "align": 3
+                        },
+                        {
+                            "x": 0,
+                            "y": 25,
+                            "classes": [
+                                "main"
+                            ],
+                            "width": 170,
+                            "text": {
+                                "length": 76,
+                                "chars": "губило вас, не разрушило вашу страну и не стало причиной поражения в следую-",
+                                "attrs": [
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    32
+                                ]
+                            },
+                            "align": 3
+                        },
+                        {
+                            "x": 0,
+                            "y": 31.25,
+                            "classes": [
+                                "main"
+                            ],
+                            "width": 170,
+                            "text": {
+                                "length": 10,
+                                "chars": "щей войне.",
+                                "attrs": [
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0
+                                ]
+                            },
+                            "align": 0
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
 }
